@@ -48,9 +48,8 @@ public class CourseAvalableOnlineStepDef extends PageObjectRepo {
 	public void i_click_on_search_button() throws Throwable {
 
 		courseAvailableOnline.clickOnSearchButton();
-		
-
 	}
+	
 	@When("^I select \"([^\"]*)\"in search results$")
 	public void i_select_in_search_results(String ScheduledCourse) throws Throwable {
 		
@@ -66,9 +65,7 @@ public class CourseAvalableOnlineStepDef extends PageObjectRepo {
 	@When("^I am navigating to salesforce$")
 	public void i_am_navigating_to_salesforce() throws Throwable {
 		
-         
-		 globalHooks.salesforceHomepage();
-
+          globalHooks.salesforceHomepage();
 	}
 
 	@Given("^I am navigating to salesforce homepage$")
@@ -109,9 +106,7 @@ public class CourseAvalableOnlineStepDef extends PageObjectRepo {
 		globalHooks.screenShot();
 		courseAvailableOnline.assertionForUntickedAvailableOption();
       
-       
-        
-	}
+    }
 
 	@When("^I am searching for scheduled course with \"([^\"]*)\" which are having unticked available online option$")
 	public void i_am_searching_for_scheduled_course_with_which_are_having_unticked_available_online_option(
@@ -127,8 +122,7 @@ public class CourseAvalableOnlineStepDef extends PageObjectRepo {
 		courseAvailableOnline.assertionForTickedAvailableOption();
         globalHooks.screenShot();
      
-
-	}
+    }
 	
 	@After
 	public void tearDown() {
